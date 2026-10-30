@@ -1,0 +1,10 @@
+[
+  {"key": "devbox",  "name": "Ambysto DevBox Pro",  "amount": 1999, "description": "One-time purchase of Ambysto DevBox Pro."},
+  {"key": "optimer", "name": "Ambysto Optimer Pro", "amount": 1999, "description": "One-time purchase of Ambysto Optimer Pro."},
+  {"key": "power",   "name": "Ambysto Power Pro",   "amount": 1999, "description": "One-time purchase of Ambysto Power Pro."},
+  {"key": "tune",    "name": "Ambysto Tune Pro",    "amount": 1999, "description": "One-time purchase of Ambysto Tune Pro."},
+  {"key": "gate",    "name": "Ambysto Gate Pro",    "amount": 1999, "description": "One-time purchase of Ambysto Gate Pro."},
+  {"key": "lean",    "name": "Ambysto Lean Pro",    "amount": 1999, "description": "One-time purchase of Ambysto Lean Pro."},
+  {"key": "steady",  "name": "Ambysto Steady Pro",  "amount": 1999, "description": "One-time purchase of Ambysto Steady Pro."},
+  {"key": "suite",   "name": "Ambysto Pro Suite",   "amount": 3900, "description": "One-time purchase of Ambysto Pro Suite: Pro for all seven Ambysto apps (DevBox, Optimer, Power, Tune, Gate, Lean, Steady)."}
+]
