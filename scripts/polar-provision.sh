@@ -17,6 +17,7 @@ call() { # method path [json]
 }
 products=$(call GET "/v1/products/?limit=100&is_archived=false")
 links=$(call GET "/v1/checkout-links/?limit=100")
+[ "$(jq -r '.pagination.max_page // 1' <<<"$products")" -le 1 ] && [ "$(jq -r '.pagination.max_page // 1' <<<"$links")" -le 1 ] || { echo "more than 100 products or links: add pagination first" >&2; exit 1; }
 printf '| Product | Price | Product id | Checkout link |\n|---|---|---|---|\n'
 jq -c '.[]' "$root/products.json" | while read -r p; do
   name=$(jq -r .name <<<"$p"); amount=$(jq -r .amount <<<"$p")
