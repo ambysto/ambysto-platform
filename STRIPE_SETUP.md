@@ -2,7 +2,7 @@
 
 Runs next to Polar ([POLAR_SETUP.md](POLAR_SETUP.md)), for comparison. Stripe is not the merchant of record: tax and invoicing are the owner's, and Stripe Tax is not enabled on these links. This ran against the live Stripe environment.
 
-Eight one-time products, each with one USD price and one Payment Link (Stripe's hosted confirmation page, no app code, no webhook). Apps $19.99, Suite $39 (launch price; change it in the Stripe dashboard when the launch ends, by creating a new price, since prices are immutable). Regenerate this table with `scripts/stripe-provision.sh` (idempotent, matches by `metadata.key`).
+Eight one-time products, each with one USD price and one Payment Link (Stripe's hosted confirmation page, no app code, no webhook). Apps $19.99, Suite $39 (launch price; when the launch ends, create a new price in the Stripe dashboard and then make a new Payment Link for it or edit the link's line item: a Payment Link keeps selling the price it was created with, and the script does not notice). Regenerate this table with `scripts/stripe-provision.sh` (idempotent, matches by `metadata.key`).
 
 | Product | Price | Product id | Price id | Payment link |
 |---|---|---|---|---|
